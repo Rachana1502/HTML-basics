@@ -1,0 +1,117 @@
+
+ <html>
+  <head>
+    <style>
+      #a1 {
+        background-color: royalblue;
+        font-size: larger;
+        text-decoration-color: white;
+    
+      }
+      #c1 {
+        background-color: pink;
+      }
+      table {
+        height: 400px;
+        width: 300px;
+        border: solid;
+        margin-left: 400px;
+        margin-top: 100px;
+      }
+      #table1{
+        height: 100px;
+        width: 150px;
+        border: solid;
+        background-color: white;
+        align-self: center;
+        
+      }
+      #a2 {
+        text-align: center;
+        background-color: royalblue;
+      }
+    </style>
+    <script>
+      function create() {
+        let ob1 = document.getElementById("t1");
+        let ob2 = document.getElementById("t2");
+        let ob3 = document.getElementById("t3");
+        let ob4 = document.getElementById("t4","t5");
+        
+        let a = ob1.value;
+        let b = ob2.value;
+        let c = ob3.value;
+        let d = ob4.value;
+
+        let mytable = document.getElementById("table1");
+        let row = document.createElement("tr");
+        let c1 = document.createElement("td");
+        let c2 = document.createElement("td");
+        let c3 = document.createElement("td");
+        let c4 = document.createElement("td");
+        
+        c1.innerText = a;
+        c2.innerText = b;
+        c3.innerText = c;
+        c4.innerText = d;
+        // 
+        row.append(c1)
+        row.append(c2)
+        row.append(c3)
+        row.append(c4)
+
+        mytable.append(row)
+      }
+    </script>
+  </head>
+  <body>
+    <table>
+      <th id="a1">
+        <b>Student Information </b>
+      </th>
+      <tr>
+        <td id="c1">
+          Name :-
+          <input type="text" id="t1" value=" " />
+        </td>
+      </tr>
+      <tr>
+        <td id="c1">
+          Email :-
+          <input type="text" id="t2" value=" " />
+        </td>
+      </tr>
+      <tr>
+        <td id="c1">
+          Phone :-
+          <input type="number" id="t3" value=" " />
+        </td>
+      </tr>
+      <tr>
+        <td id="c1">
+          Gender :-
+          <input type="radio" name="Gender" id="t4" value="Male" /><label
+            >Male</label
+          >
+          <input type="radio" name="Gender" id="t5"value="Female" /><label
+            >Female</label
+          >
+        </td>
+      </tr>
+      <td id="a2">
+          <input type="button" value="Ok " onclick="create()" />
+      </td>
+    </table>
+    <div>
+        <table border="1" id="table1">
+            
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Gender</th>
+        
+        </table>
+    </div>
+  </body>
+
+</html>

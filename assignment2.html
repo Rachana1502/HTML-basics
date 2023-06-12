@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <script>
+            function create(){
+                let ob1=document.getElementById("t1")
+                let ob2=document.getElementById("t2")
+                let ob3=document.getElementById("t3")
+                let ob4=document.getElementById("t4")
+                let ob5=document.getElementById("t5")
+                let ob6=document.getElementById("t6")
+                let ob7=document.getElementById("t7")
+                let a=ob1.value
+                let b=ob2.value
+                let c=ob3.value
+                let d=ob4.value
+                let e=ob5.value
+                let f=ob6.value
+                let g=ob7.value
+                mytable=document.getElementById("table1")
+                let row=document.createElement("tr")
+                let c1=document.createElement("td")
+                let c2=document.createElement("td")
+                let c3=document.createElement("td")
+                let c4=document.createElement("td")
+                let c5=document.createElement("td")
+                let c6=document.createElement("td")
+                let c7=document.createElement("td")
+                c1.innerText=a
+                c2.innerText=b
+                c3.innerText=c
+                c4.innerText=d
+                c5.innerText=e
+                c6.innerText=f
+                c7.innerText=g
+                row.append(c1)
+                row.append(c2)
+                row.append(c3)
+                row.append(c4)
+                row.append(c5)
+                row.append(c6)
+                row.append(c7)
+                mytable.append(row)
+            }
+        </script>
+    
+    </head>
+    <body>
+        <label>Datetime</label>
+        <input type="text" id="t1" value="  ">
+        <label>city</label>
+        <input type="text" id="t2" value="  ">
+        <label>state</label>
+        <input type="text" id="t3" value="  ">
+        <label>country</label>
+        <input type="text" id="t4" value="  ">
+        <label>shape</label>
+        <input type="text" id="t5" value="  ">
+        <label>durationminute</label>
+        <input type="text" id="t6" value="  ">
+        <label>commentes</label>
+        <input type="text" id="t7" value="  ">
+        <br>
+        <br>
+        <br>
+        <input type="button" value="click here" onclick="create()">
+         <br>
+         <br>
+         <table border="1" id="table1">
+            <th>Datetime</th>
+            <th>city</th>
+            <th>state</th>
+            <th>country</th>
+            <th>shape</th>
+            <th>dueationminute</th>
+            <th>commentes</th>
+         </table>
+
+
+    </body>
+</html>
